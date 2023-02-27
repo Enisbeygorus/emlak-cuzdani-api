@@ -2,9 +2,14 @@ const mongoose = require("mongoose");
 
 const CustomerPostSchema = new mongoose.Schema(
   {
+    title: {
+      type: String,
+      required: [true, "Please provide Title"],
+      maxlength: 100,
+    },
     description: {
       type: String,
-      required: [true, "Please provide Animal Type"],
+      required: [true, "Please provide description"],
       maxlength: 100,
     },
     maxPrice: {
@@ -29,12 +34,12 @@ const CustomerPostSchema = new mongoose.Schema(
     },
     neighbourhood: {
       type: String,
-      required: [true, "Please Provide Neighbourhood"],
+      // required: [true, "Please Provide Neighbourhood"],
       maxlength: 50,
     },
     roomNumber: {
       type: String,
-      required: [true, "Please Provide Neighbourhood"],
+      required: [true, "Please Provide roomNumber"],
       maxlength: 7,
     },
 

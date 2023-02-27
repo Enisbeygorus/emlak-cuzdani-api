@@ -2,6 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 const {
+  getAllCustomerPosts,
   createCustomerPost,
   deleteCustomerPost,
   getCustomerPost,
@@ -11,8 +12,7 @@ const {
   updateCustomerPost,
 } = require("../controllers/customerPosts");
 
-router.route("/").post(createCustomerPost).get(getCustomerPostByUserId);
-
+router.route("/").post(createCustomerPost).get(getAllCustomerPosts);
 router.route("/allByUserId").get(getAllCustomerPostsByUserId);
 router.route("/allByStoreId/:storeId").get(getAllCustomerPostsByStoreId);
 
