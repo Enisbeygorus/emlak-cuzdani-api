@@ -1,6 +1,6 @@
-# real-state-node-api
+# real-estate-node-api
 
-A node js api for to do CRUD operations with customer posts about real states. MongoDB is used As database.
+A node js api for to do CRUD operations with customer posts about real estates. MongoDB is used As database.
 
 ## Steps
 
